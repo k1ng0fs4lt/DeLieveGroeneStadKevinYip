@@ -1,0 +1,643 @@
+@font-face {
+    font-family: 'coiny';
+    src: url('../fonts/Coiny-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Gantari';
+    src: url('../fonts/Gantari-VariableFont_wght.ttf');
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    background-image: url('../images/achtergrond.png');
+    background-attachment: scroll;
+    background-size: 375px 900px;
+    background-position: top;
+    /* background: linear-gradient(
+        to right,
+        white,
+        rgb(199, 197, 197)
+    ); */
+}
+
+nav{
+    margin-top: 4em;
+    width: auto;
+    height: auto;
+    padding: 0.5em;
+    background-color: #D9EEEA;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    font-family: 'Coiny';
+    text-decoration: none;
+    color:#00A877;
+    font-size: 1em;
+}
+
+button{
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding: 1em;
+    background-color: #00A877;
+    border-radius: 30px;
+    height: 6%;
+    width: 12em;
+}
+
+button a{
+    font-family: 'Coiny';
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+img#logo{
+    width: 14rem;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 3.7em;
+    margin-top: 4em;
+    margin-bottom: 6em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+
+.container .links{
+    margin-right: 2.5em;
+}
+
+figure{
+    margin: 0;
+    display: inline-block;
+}
+
+figure.recentefotos{
+    margin: 1em;
+}
+
+figcaption{
+    font-family: 'Gantari';
+    font-weight: bold;
+    font-size: 0.75em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+}
+
+section{
+    background-color: #D9EEEA;
+    width: 18em;
+    height: auto;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: tussenKoppen;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tussenKoppen{
+
+    0% {
+        transform: rotateX(20deg)
+    }
+    50% {
+        transform: rotateX(-20deg)
+    }
+    100% {
+        transform: rotateX(20deg)
+    }
+
+}
+
+section h2{
+    margin-top: 0;
+}
+
+section p{
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    margin-top: 0;
+}
+
+#section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 2em;
+}
+
+#section2 p{
+    margin-bottom: auto;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+article{
+    margin-top: 2em;
+    width: auto;
+    height: auto;
+    margin-left: 3em;
+    margin-right: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    animation-name: artikel;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes artikel{
+    0% {
+        transform: rotate(1.5deg)
+    }
+    50% {
+        transform: rotate(-1.5deg)
+    }
+    100% {
+        transform: rotate(1.5deg)
+    }
+}
+
+article#meestrecent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Coiny';
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 1.5em;
+    text-align: left;
+    color: #00A877;
+}
+
+#section2 h2{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+h2{
+    font-family: 'Coiny';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #00A877;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 3em;
+    text-align: center;
+    animation-name: tussentitels;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tussentitels{
+    0% {
+        transform: rotateX(40deg)
+    }
+    50% {
+        transform: rotateX(-40deg)
+    }
+    100% {
+        transform: rotateX(40deg)
+    }
+}
+
+h3{
+    font-family: 'Coiny';
+    display: block;
+    margin-top: 2em;
+    margin-left: 2.5em;
+    margin-right: auto;
+    color: #00A877;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Gantari';
+    font-weight: bold;
+}
+
+article p{
+    font-size: 0.8rem;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.recente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#foto1{
+    width: 102px;
+    height: 167px;
+}
+
+#foto2{
+    width: 58px;
+    height: 82px;
+}
+
+#foto3{
+    width: 66px;
+    height: 102px;
+}
+
+#foto4{
+    width: 66px;
+    height: 106px;
+}
+
+#eco{
+    height: 68px;
+    width: 86px;
+}
+
+#idee{
+    height: 72px;
+    width: 45px;
+}
+
+#transformatie{
+    height: 145px;
+    width: 215px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+#instructie{
+    width: 70px;
+    height: 136px;
+}
+
+#map{
+    width: 48px;
+    height: 58px;
+}
+
+#pijlonder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18px;
+    height: 24px;
+}
+
+#kaart{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 206px;
+    height: 206px;
+}
+
+#bijdragen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    height: 125px;
+}
+
+#home{
+    width: 30px;
+    height: 32px;
+}
+
+#verhaal{
+    width: 39px;
+    height: 32px;
+}
+
+#doneren{
+    width: 47px;
+    height: 25px;
+}
+
+#artikel3{
+    width: auto;
+    height: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#artikel3 p{
+    height: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+
+
+p{
+    margin-top: 0;
+}
+
+p.links{
+    text-align: left;
+    margin-right: 0;
+}
+
+p.rechts{
+    text-align: right;
+    margin-left: 0;
+}
+
+p.midden{
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 3em;
+    font-size: 0.8rem;
+
+}
+
+article#verhaalalgemeen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+article#verhaalalgemeen h1{
+    margin-left: 0;
+}
+
+article#verhaalalgemeen p{
+    margin: 0;
+    text-align: left;
+}
+
+#bovenstuk{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: auto;
+    height: auto;
+    margin-left: 0;
+}
+
+#bovenstuk p{
+    margin: 0;
+    font-size: 0.8em;
+    
+}
+
+#verhaaltje{
+    width: 120px;
+    height: 100px;
+    margin-right: 1em;
+}
+
+#verhaallijn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#verhaallijn p{
+    margin-bottom: 11em;
+}
+
+#tijdperk{
+    width: 53px;
+    height: 778px;
+}
+
+section#contact h2{
+    text-align: left;
+    margin-right: 9em;
+}
+
+.contacticonen{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+#telefoon{
+    width: 18px;
+    height: 22px;
+    margin-right: 0.5em;
+}
+
+#email{
+    width: 30px;
+    height: 19px;
+    margin-right: 0.5em;
+}
+
+#insta{
+    width: 35px;
+    height: 35px;
+    margin-right: 0.5em;
+}
+
+
+
+
+article#donatievoorwoord{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 4em;
+    width: auto;
+    height: auto;
+}
+
+article#donatievoorwoord h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+article#donatievoorwoord p{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#aloe{
+    width: 108px;
+    height: 146px;
+}
+
+#cosmetica{
+    width: 121px;
+    height: 154px;
+}
+
+#medicijn{
+    width: 121px;
+    height: 122px;
+}
+
+#consumptie{
+    width: 119px;
+    height: 110px;
+}
+
+#gezond{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    width: 120px;
+    height: 130px;
+}
+
+#pijl{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 53px;
+    margin-bottom: 0;
+}
+
+form{
+    background-color: #D9EEEA;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    border-radius: 20px;
+}
+
+.invoer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+form label{
+    font-family: 'Gantari';
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+form #postcodelabel{
+    margin-right: 0.5em;
+}
+
+input{
+    margin-bottom: 1em;
+}
+
+input#voornaam{
+    width: 5em;
+}
+
+input#tussenvoegsel{
+    width: 6em;
+}
+
+input#achternaam{
+    width: 5em;
+}
+
+input#straatnaam{
+    width: 9.5em;
+}
+
+input#huisnr{
+    width: 3em;
+}
+
+input#postcode{
+    width: 4em;
+}
+
+input#stad{
+    width: 7em;
+}
+
+input#telefoonnr{
+    width: 9.5em;
+}
+
+input#email{
+    width: 9em;
+}
+
+input#bedrag{
+    width: 5em;
+}
+
+input#submit{
+    font-family: 'Coiny';
+    background: #00A877;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    height: 3.5em;
+    width: 6em;
+    margin-left: 0.5em;
+    padding: 1em;
+    font-weight: bold;
+}
