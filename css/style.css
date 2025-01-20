@@ -53,6 +53,9 @@ a{
 }
 
 button{
+    font-family: 'Coiny';
+    font-size: 1em;
+    color: white;
     display: block;
     margin-top: 2em;
     margin-left: auto;
@@ -63,13 +66,6 @@ button{
     border-radius: 30px;
     height: 6%;
     width: 12em;
-}
-
-button a{
-    font-family: 'Coiny';
-    font-size: 1em;
-    font-weight: bold;
-    color: white;
 }
 
 img#logo{
@@ -328,7 +324,7 @@ article p{
     height: 58px;
 }
 
-#pijlonder{
+.pijlonder{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -598,11 +594,11 @@ input#tussenvoegsel{
 }
 
 input#achternaam{
-    width: 5em;
+    width: 6em;
 }
 
 input#straatnaam{
-    width: 9.5em;
+    width: 10em;
 }
 
 input#huisnr{
@@ -610,7 +606,7 @@ input#huisnr{
 }
 
 input#postcode{
-    width: 4em;
+    width: 5em;
 }
 
 input#stad{
@@ -618,7 +614,7 @@ input#stad{
 }
 
 input#telefoonnr{
-    width: 9.5em;
+    width: 10em;
 }
 
 input#email{
@@ -639,5 +635,22 @@ input#submit{
     width: 6em;
     margin-left: 0.5em;
     padding: 1em;
-    font-weight: bold;
+    animation-name: donatieknop;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes donatieknop{
+    0% {
+        transform: rotateX(40deg)
+    }
+    25% {
+        transform: rotateY(-40deg)
+    }
+    50% {
+        transform: rotateX(40deg)
+    }
+    100% {
+        transform: rotateY(40deg)
+    }
 }

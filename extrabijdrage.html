@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
 
                 Hieronder ziet u meer informatie over de Aloe Vera plant!
             </p>
-            <img id="pijlonder" src="images/pijl.png">
+            <img class="pijlonder" src="images/pijl.png" alt="pijlonder">
         </article>
         <article>
             <p class="rechts">
@@ -27,10 +27,10 @@
                 voor verschillende doeleinden. Het is een echte “Wonder-plant” die men tot heden nog steeds gebruikt. Met een 
                 harde buitenkant en vlezige gevulde bladeren heeft het zeker de naam verdiend met wonderbaarlijke eigenschappen.
             </p>
-            <img id="aloe" src="images/aloe.png">
+            <img id="aloe" src="images/aloe.png" alt="aloe">
         </article>
         <article>
-            <img id="cosmetica" src="images/cosmetica.png">
+            <img id="cosmetica" src="images/cosmetica.png" alt="cosmetica">
             <p class="links">
                 De vruchtsap van de Aloe Vera plant wordt meerendeels verwerkt in cosmetica. Dit kunnen moisturizers, lotions, 
                 cremes, serums, face masks, zonnebrand, shampoo en condioner zijn. Aloe Vera wordt dus in de cosmetica gebruikt voor:<br><br>
@@ -48,63 +48,63 @@
                 Naast cosmetica wordt de sap ook gebruikt in de zorg. Denk aan supplementen, anti-jeuk cremes, tandpasta, oogdruppels, 
                 antioxidatie dranken, spierverlichtende gels en haargroei serums.
             </p>
-            <img id="medicijn" src="images/medicijn.png">
+            <img id="medicijn" src="images/medicijn.png" alt="medicijn">
         </article>
         <article>
-            <img id="consumptie" src="images/consumptie.png">
+            <img id="consumptie" src="images/consumptie.png" alt="consumptie">
             <p class="links">
                 Het vruchtvlees wordt natuurlijk ook verwerkt in eten of dranken voor consumptie. Het kan in de vorm van sap, infuusde water,  
                 smoothie of thee zijn. Voor eten kan het verwerkt worden in snoepgoed of gezonde snacks zoals energybars.
             </p>
         </article>
-        <img id="gezond" src="images/gezond.png"> 
+        <img id="gezond" src="images/gezond.png" alt="gezond"> 
         <p class="midden">
             In het algemeen is het gebruik of consumptie van Aloe Vera lonend voor een gezondere spijsvertering,
                 hydratatie van de huid, beschermde immuunsysteem, bloeddruk regulatie, hartgezondheid en nog veel meer!
         </p>
         <h2>Geinteresseerd? Doneer hieronder uw eigen gekozen bedrag!</h2>
-        <img id="pijlonder" src="images/pijl.png">
+        <img class="pijlonder" src="images/pijl.png" alt="pijlonder">
         <h3>Donatie formulier</h3>
         <form>
             <div class="invoer">
-                <label for="voornaam">Voornaam</label>
+                <label for="voornaam">* Voornaam</label>
                 <label for="tussenvoegsel">Tussenvoegsel</label>              
-                <label for="achternaam">Achternaam</label>          
+                <label for="achternaam">* Achternaam</label>          
             </div>
             <div class="invoer">
-                <input type="text" id="voornaam" name="fname">
-                <input type="text" id="tussenvoegsel" name="lname">
-                <input type="text" id="achternaam" name="lname">
+                <input type="text" id="voornaam" name="voornaam" required>
+                <input type="text" id="tussenvoegsel" name="tussenvoegsel">
+                <input type="text" id="achternaam" name="achternaam" required>
             </div>
             <div class="invoer">
-                <label for="straatnaam">Straatnaam</label><br>
-                <label for="huisnr">Huisnr.</label><br>
+                <label for="straatnaam">* Straatnaam</label><br>
+                <label for="huisnr">* Huisnr.</label><br>
             </div>
             <div class="invoer">
-                <input type="text" id="straatnaam" name="lname"><br>
-                <input type="text" id="huisnr" name="lname"><br>
+                <input type="text" id="straatnaam" name="straatnaam" required><br>
+                <input type="text" id="huisnr" name="huisnr" required><br>
             </div>
             <div class="invoer">
-                <label for="postcode" id="postcodelabel">Postcode</label><br>
-                <label for="stad">Stad</label><br>
+                <label for="postcode" id="postcodelabel">* Postcode</label><br>
+                <label for="stad">* Stad</label><br>
             </div>
             <div class="invoer">
-                <input type="text" id="postcode" name="lname"><br>
-                <input type="text" id="stad" name="lname"><br>
+                <input type="text" id="postcode" name="postcode" required><br>
+                <input type="text" id="stad" name="stad" required><br>
             </div>
             <div class="invoer">
-                <label for="telefoonnr">Telefoonnr.</label><br>
-                <label for="email">Email</label><br>
+                <label for="telefoonnr">* Telefoonnr.</label><br>
+                <label for="email">* Email</label><br>
             </div>
             <div class="invoer">
-                <input type="text" id="telefoonnr" name="lname"><br>
-                <input type="text" id="email" name="lname"><br>
+                <input type="text" id="telefoonnr" name="telefoonnr" required><br>
+                <input type="text" id="email" name="email" required><br>
             </div>
             <div class="invoer">
-                <label for="bedrag">Kies uw bedrag:</label><br>
+                <label for="bedrag">* Kies uw bedrag:</label><br>
             </div>
             <div class="invoer">
-                <input type="number" id="bedrag" name="lname" placeholder="Bijv. €1,50"><br>
+                <input type="number" id="bedrag" name="bedrag" placeholder="Bijv. €1,50" min="0.01" max="100" required><br>
                 <input type="submit" id="submit" value="Doneren">
             </div>
         </form>
@@ -112,15 +112,15 @@
     <nav>
         <ul>
             <li>
-                <img id="home" src="images/home.png">
+                <a href="index.html"><img id="home" src="images/home.png" alt="home"></a>
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <img id="verhaal" src="images/verhaal.png">
+                <a href="overons.html"><img id="verhaal" src="images/verhaal.png" alt="verhaal"></a>
                 <a href="overons.html">Over Ons</a>
             </li>
             <li>
-                <img id="doneren" src="images/doneren.png">
+                <a href="extrabijdrage.html"><img id="doneren" src="images/doneren.png" alt="doneren"></a>
                 <a href="extrabijdrage.html">Doneren</a>
             </li>
         </ul>
