@@ -32,6 +32,7 @@ body{
     background-attachment: scroll;
     background-size: 375px 900px;
     background-position: top;
+    text-shadow: 1px 2px 1px rgb(179, 179, 179);
 }
 
 footer{
@@ -188,21 +189,6 @@ section p{
     margin-top: 0;
 }
 
-#section2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    margin-top: 2em;
-}
-
-#section2 p{
-    margin-bottom: auto;
-    height: auto;
-    width: auto;
-    text-align: center;
-}
-
 article{
     margin-top: 2em;
     margin-bottom: 3em;
@@ -249,11 +235,6 @@ h1{
     font-size: 1.5em;
     text-align: left;
     color: #E03724;
-}
-
-#section2 h2{
-    margin-top: 0;
-    margin-bottom: 0.5em;
 }
 
 h2{
