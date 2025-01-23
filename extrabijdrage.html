@@ -10,22 +10,20 @@
     <main>
         <article id="donatievoorwoord">
             <h1>Donatie voor project: "Aloe Allemaal"</h1>
-            <p class="midden">Voor vrijwilligers die graag willen bijdragen met onze initiatief maar simpelweg geen tijd ervoor hebben, 
-                hebben wij een project bedacht om geld in te zamelen om Aloe Vera planten te planten op willekeurige straatpalen. De 
-                buurtbewoners kunnen vervolgens de bladeren van de planten afbreken en simpelweg gebruiken voor verschillende doeleinden.<br><br>  
+            <p class="midden">"Aloe Allemaal" is een geldinzamelingsproject voor vrijwilligers die willen bijdragen aan ons initiatief 
+                ondanks hun drukke leven. Met de ingezamelde donaties worden Aloe Vera's geplant op willekeurige straatpalen in een wijk waar
+                buurtbewoners de bladeren kunnen gebruiken.<br><br>  
     
-                Vrijwilligers kunnen zelf het bedrag kiezen die ze doneren. Zo is er altijd een keuze en wordt niet een specifiek 
-                bedrag geforceerd. Alle soorten bijdragen helpen ons enorm!<br><br>
+                Vrijwilligers kiezen zelf het donatiebedrag. Alle soorten bijdragen helpen ons enorm!<br><br>
 
-                Hieronder ziet u meer informatie over de Aloe Vera plant!
+                Hieronder ziet u meer informatie over de Aloe Vera!
             </p>
             <img class="pijlonder" src="images/pijl.png" alt="pijlonder">
         </article>
         <article>
             <p class="rechts">
-                De Aloe Vera plant, een vaak voorkomende succulente plant in tropische gebieden wordt sinds de oudheid gebruikt 
-                voor verschillende doeleinden. Het is een echte “Wonder-plant” die men tot heden nog steeds gebruikt. Met een 
-                harde buitenkant en vlezige gevulde bladeren heeft het zeker de naam verdiend met wonderbaarlijke eigenschappen.
+                De Aloe Vera plant, een vaak voorkomende succulente plant met wonderbaarlijke eigenschappen in tropische gebieden, wordt sinds 
+                de oudheid tot heden nog steeds gebruikt voor verschillende doeleinden. 
             </p>
             <img id="aloe" src="images/aloe.png" alt="aloe">
         </article>
@@ -33,14 +31,7 @@
             <img id="cosmetica" src="images/cosmetica.png" alt="cosmetica">
             <p class="links">
                 De vruchtsap van de Aloe Vera plant wordt meerendeels verwerkt in cosmetica. Dit kunnen moisturizers, lotions, 
-                cremes, serums, face masks, zonnebrand, shampoo en condioner zijn. Aloe Vera wordt dus in de cosmetica gebruikt voor:<br><br>
-
-                -  Hydratatie<br>
-                -  Vochtbehouding<br>
-                -  Collageen productie<br>
-                -  Ontstekingsremming<br>
-                -  Zonnebrand verlichting<br>
-                -  Anti-bacteriele eigenschappen, etc.
+                cremes, serums, face masks, zonnebrand, shampoo en condioner zijn.
             </p>
         </article>
         <article>
@@ -53,8 +44,8 @@
         <article>
             <img id="consumptie" src="images/consumptie.png" alt="consumptie">
             <p class="links">
-                Het vruchtvlees wordt natuurlijk ook verwerkt in eten of dranken voor consumptie. Het kan in de vorm van sap, infuusde water,  
-                smoothie of thee zijn. Voor eten kan het verwerkt worden in snoepgoed of gezonde snacks zoals energybars.
+                Het vruchtvlees wordt natuurlijk ook verwerkt in eten of dranken voor consumptie, zoals sap, infuusde water
+                thee, snoepgoed of energybars.
             </p>
         </article>
         <img id="gezond" src="images/gezond.png" alt="gezond"> 
@@ -82,7 +73,7 @@
             </div>
             <div class="invoer">
                 <input type="text" id="straatnaam" name="straatnaam" required><br>
-                <input type="text" id="huisnr" name="huisnr" required><br>
+                <input type="number" id="huisnr" name="huisnr" min="1" max="10000"><br>
             </div>
             <div class="invoer">
                 <label for="postcode" id="postcodelabel">* Postcode</label><br>
@@ -97,33 +88,35 @@
                 <label for="email">* Email</label><br>
             </div>
             <div class="invoer">
-                <input type="text" id="telefoonnr" name="telefoonnr" required><br>
+                <input type="number" id="telefoonnr" name="telefoonnr"><br>
                 <input type="text" id="email" name="email" required><br>
             </div>
             <div class="invoer">
                 <label for="bedrag">* Kies uw bedrag:</label><br>
             </div>
             <div class="invoer">
-                <input type="number" id="bedrag" name="bedrag" placeholder="Bijv. €1,50" min="0.01" max="100" required><br>
+                <input type="number" id="bedrag" name="bedrag" placeholder="Bijv. €1,50" min="0,10" max="100" required><br>
                 <input type="submit" id="submit" value="Doneren">
             </div>
         </form>
     </main>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html"><img id="home" src="images/home.png" alt="home"></a>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="overons.html"><img id="verhaal" src="images/verhaal.png" alt="verhaal"></a>
-                <a href="overons.html">Over Ons</a>
-            </li>
-            <li>
-                <a href="extrabijdrage.html"><img id="doneren" src="images/doneren.png" alt="doneren"></a>
-                <a href="extrabijdrage.html">Doneren</a>
-            </li>
-        </ul>
-    </nav>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img id="home" src="images/home.png" alt="home"></a>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="overons.html"><img id="verhaal" src="images/verhaal.png" alt="verhaal"></a>
+                    <a href="overons.html">Over Ons</a>
+                </li>
+                <li>
+                    <a href="extrabijdrage.html"><img id="doneren" src="images/doneren.png" alt="doneren"></a>
+                    <a id="highlightdonatie" href="extrabijdrage.html">Doneren</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

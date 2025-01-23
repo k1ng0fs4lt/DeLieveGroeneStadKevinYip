@@ -8,6 +8,23 @@
     src: url('../fonts/Gantari-VariableFont_wght.ttf');
 }
 
+main{
+    animation: transitionIn 0.75s;
+    
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
 body{
     margin: 0;
     background-color: white;
@@ -17,12 +34,16 @@ body{
     background-position: top;
 }
 
+footer{
+    margin-top: 10em;
+}
+
 nav{
-    margin-top: 4em;
-    width: auto;
-    height: auto;
-    padding: 0.5em;
+    height: 6em;
     background-color: #D9EEEA;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 ul{
@@ -31,6 +52,7 @@ ul{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: end;
+    margin-right: 1em;
 }
 
 li{
@@ -47,21 +69,34 @@ a{
     font-size: 1em;
 }
 
-button{
-    font-family: 'Coiny';
-    font-size: 1em;
-    color: white;
-    display: block;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    padding: 1em;
-    background-color: #00A877;
-    border-radius: 30px;
-    height: 6%;
-    width: 12em;
+a#highlighthome{
+    color:#E03724;
 }
+
+a#highlightoverons{
+    color:#E03724;
+}
+
+a#highlightdonatie{
+    color:#E03724;
+}
+
+#home{
+    width: 30px;
+    height: 32px;
+}
+
+#verhaal{
+    width: 39px;
+    height: 32px;
+}
+
+#doneren{
+    width: 47px;
+    height: 25px;
+}
+
+
 
 img#logo{
     width: 14rem;
@@ -69,9 +104,10 @@ img#logo{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 3.7em;
-    margin-top: 4em;
-    margin-bottom: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
     animation-name: fadeIn;
     animation-duration: 7s;
     animation-iteration-count:initial;
@@ -169,6 +205,7 @@ section p{
 
 article{
     margin-top: 2em;
+    margin-bottom: 3em;
     width: auto;
     height: auto;
     margin-left: 3em;
@@ -211,7 +248,7 @@ h1{
     margin-right: auto;
     font-size: 1.5em;
     text-align: left;
-    color: #00A877;
+    color: #E03724;
 }
 
 #section2 h2{
@@ -224,7 +261,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #00A877;
+    color: #E03724;
     font-size: 1.5em;
     font-weight: bolder;
     margin-right: 1em;
@@ -254,22 +291,36 @@ h3{
     margin-top: 2em;
     margin-left: 2.5em;
     margin-right: auto;
-    color: #00A877;
+    color: #E03724;
     font-weight: bold;
 }
 
 p{
     font-family: 'Gantari';
     font-weight: bold;
-}
-
-article p{
     font-size: 0.8rem;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-top: 0;
 }
 
-.recente{
+p.links{
+    text-align: left;
+    margin-left: 1.5em;
+}
+
+p.rechts{
+    text-align: right;
+    margin-right: 1.5em;
+}
+
+p.midden{
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 3em;
+    font-size: 0.8rem;
+
+}
+
+#recente{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -331,6 +382,7 @@ article p{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em;
     width: 18px;
     height: 24px;
 }
@@ -339,8 +391,9 @@ article p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 206px;
-    height: 206px;
+    margin-top: 2em;
+    width: 280px;
+    height: 280px;
 }
 
 #bijdragen{
@@ -351,24 +404,41 @@ article p{
     height: 125px;
 }
 
-#home{
-    width: 30px;
-    height: 32px;
+button{
+    font-family: 'Coiny';
+    font-size: 1em;
+    color: white;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding: 1em;
+    background-color: #E03724;
+    border-radius: 30px;
+    height: 6%;
+    width: 12em;
+    animation-name: knopje;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
-#verhaal{
-    width: 39px;
-    height: 32px;
-}
-
-#doneren{
-    width: 47px;
-    height: 25px;
+@keyframes knopje{
+    0% {
+        transform: rotateX(30deg)
+    }
+    25% {
+        transform: rotateY(-30deg)
+    }
+    50% {
+        transform: rotateX(30deg)
+    }
+    100% {
+        transform: rotateY(30deg)
+    }
 }
 
 #artikel3{
-    width: auto;
-    height: auto;
     margin-left: 1em;
     margin-right: 1em;
     display: flex;
@@ -377,35 +447,11 @@ article p{
 }
 
 #artikel3 p{
-    height: auto;
     margin-left: 2em;
     margin-right: 2em;
 }
 
-
-
-p{
-    margin-top: 0;
-}
-
-p.links{
-    text-align: left;
-    margin-right: 0;
-}
-
-p.rechts{
-    text-align: right;
-    margin-left: 0;
-}
-
-p.midden{
-    text-align: center;
-    margin-left: 2em;
-    margin-right: 3em;
-    font-size: 0.8rem;
-
-}
-
+/*Over Ons pagina*/
 article#verhaalalgemeen{
     display: flex;
     flex-direction: column;
@@ -489,9 +535,7 @@ section#contact h2{
     margin-right: 0.5em;
 }
 
-
-
-
+/*Donatie pagina*/
 article#donatievoorwoord{
     display: flex;
     flex-direction: column;
@@ -630,7 +674,7 @@ input#bedrag{
 
 input#submit{
     font-family: 'Coiny';
-    background: #00A877;
+    background: #E03724;
     color: white;
     border-radius: 30px;
     border: none;
@@ -639,21 +683,21 @@ input#submit{
     margin-left: 0.5em;
     padding: 1em;
     animation-name: donatieknop;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
 @keyframes donatieknop{
     0% {
-        transform: rotateX(40deg)
+        transform: rotateX(30deg)
     }
     25% {
-        transform: rotateY(-40deg)
+        transform: rotateY(-30deg)
     }
     50% {
-        transform: rotateX(40deg)
+        transform: rotateX(30deg)
     }
     100% {
-        transform: rotateY(40deg)
+        transform: rotateY(30deg)
     }
 }
