@@ -32,7 +32,6 @@ body{
     background-attachment: scroll;
     background-size: 375px 900px;
     background-position: top;
-    text-shadow: 1px 2px 1px rgb(179, 179, 179);
 }
 
 footer{
@@ -68,6 +67,7 @@ a{
     text-decoration: none;
     color:#00A877;
     font-size: 1em;
+    text-shadow: 1px 2px 1px rgb(179, 179, 179);
 }
 
 a#highlighthome{
@@ -235,6 +235,7 @@ h1{
     font-size: 1.5em;
     text-align: left;
     color: #E03724;
+    text-shadow: 1px 2px 1px rgb(179, 179, 179);
 }
 
 h2{
@@ -252,6 +253,7 @@ h2{
     animation-name: tussentitels;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    text-shadow: 1px 2px 1px rgb(179, 179, 179);
 }
 
 @keyframes tussentitels{
@@ -274,6 +276,7 @@ h3{
     margin-right: auto;
     color: #E03724;
     font-weight: bold;
+    text-shadow: 1px 2px 1px rgb(179, 179, 179);
 }
 
 p{
